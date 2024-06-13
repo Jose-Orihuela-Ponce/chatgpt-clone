@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <ul>
+        <li class="message bot">
+          <span>GPT</span>
+          <p>Hello, how can i can help you?</p>
+        </li>
+      </ul>
+    </main>
+
+    <form>
+      <input
+        type="text"
+        placeholder="Write a message here ..."
+        name="message"
+      />
+      <button disabled="true">Loading</button>
+    </form>
+
+    <p class="progress"></p>
+
+    <template id="message-template">
+      <li class="message">
+        <span></span>
+        <p></p>
+      </li>
+    </template>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

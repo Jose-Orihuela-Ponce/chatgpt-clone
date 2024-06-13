@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: black;
+  color: rgb(226, 218, 218);
+  display: flex;
+  flex-direction: column;
+  padding: 15px 25px;
+  width: 100%;
+  height: 100vh;
+  gap: 20px;
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  height: 75vh;
+  background-color: rgb(16, 16, 32);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.progress {
+  height: 20px;
+  color: gray;
+  font-size: 12px;
+}
+
+form {
+  display: flex;
+  gap: 20px;
+}
+form input {
+  padding: 15px 20px;
+  outline: none;
+  background: none;
+  border: 1px solid rgb(57, 26, 59);
+  border-radius: 10px;
+  color: white;
+  flex: 1;
+}
+form button {
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgb(57, 26, 59);
+  border: 1px solid rgb(57, 26, 59);
+  color: white;
+}
+form button:hover {
+  background-color: rgb(82, 37, 85);
+}
+
+form button:disabled {
+  background-color: rgba(255, 9, 9, 0.4);
+  pointer-events: none;
+}
+template {
+  display: none;
+}
+main ul {
+  display: flex;
+  padding: 25px;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+main li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+main li.message span {
+  background-color: rgb(107, 46, 46);
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-content: center;
+}
+
+main li.user span {
+  align-self: flex-end;
+}
+main li.message {
+  max-width: 60%;
+}
+main li.user {
+  align-self: self-end;
+}
+
+main li.message p {
+  background-color: rgb(51, 28, 28, 0.7);
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+main li.user p {
+  background-color: rgb(17, 36, 39, 0.7);
+  margin-right: 20px;
+}
+
+/* Target the scrollbar */
+::-webkit-scrollbar {
+  width: 7px; /* Width of the scrollbar */
+  height: 8px; /* Height of the scrollbar for horizontal scrollbars */
+}
+
+/* Target the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+  border-radius: 10px;
+}
+
+/* Target the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #666565; /* Color of the scrollbar thumb */
+  border-radius: 10px;
+}
+
+/* Target the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color when hovering over the scrollbar thumb */
+}
